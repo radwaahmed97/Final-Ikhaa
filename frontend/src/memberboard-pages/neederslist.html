@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Needers List</title>
+  <link rel="stylesheet" href="./neederslist.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <nav id="navbar">
+      <header class="navbar-header">
+        <span class="member-name" id="navbar-member-name">Hi, User</span>
+        <div class="member-image">
+          <img id="member-image" src="default-image.jpg" alt="Profile Image">
+        </div>
+      </header>
+      <div class="nav-links">
+        <a href="./neederslist.html" class="nav-link">Needers List</a>
+        <a href="./requests.html" class="nav-link">Requests</a>
+        <a href="./donationsitems.html" class="nav-link">Donation Items</a>
+        <a href="./archives.html" class="nav-link">Archives</a>
+        <a href="./statistics.html" class="nav-link">Statistics</a>
+        <a href="./profilesettings.html" class="nav-link">Profile Settings</a>
+      </div>
+      <div class="logout-button">
+        <button type="button" id="logoutBtn" class="logoutBtn">Logout</button>
+      </div>
+    </nav>
+  </div>
+  <main class="neederslist">
+    <h1>Needers List</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="needers-table-body">
+        <!-- Rows will be dynamically added here -->
+      </tbody>
+    </table>
+  </main>
+  <script src="./neederslist.js"></script>
+</body>
+
+</html>
