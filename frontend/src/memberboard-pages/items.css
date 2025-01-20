@@ -1,0 +1,161 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    color: #1e3f66;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 190px;
+    height: 100%;
+    background-color: #1e3f66;
+    padding: 20px 10px;
+    border-right: 3px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    /* Ensure navbar remains behind the modal */
+}
+
+.navbar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.member-name {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.member-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid aliceblue;
+    clip: circle(50% at center);
+}
+
+.nav-links {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #1e3f66;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #005555;
+    color: aliceblue;
+}
+
+.categories-items {
+    margin-left: 210px;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.items-header {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.add-btn {
+    background-color: #1e3f66;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-btn:hover {
+    background-color: #005555;
+}
+
+.body-container {
+    border: 2px solid #1e3f66;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.item-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #1e3f66;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dimmed background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure modal is above all other elements */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    z-index: 1001;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}

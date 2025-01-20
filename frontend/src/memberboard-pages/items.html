@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Items</title>
+    <link rel="stylesheet" href="./items.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <nav id="navbar">
+            <header class="navbar-header">
+                <span class="member-name" id="navbar-member-name">Hi, User</span>
+                <div class="member-image">
+                    <img id="member-image" src="default-image.jpg" alt="Profile Image">
+                </div>
+            </header>
+            <div class="nav-links">
+                <a href="./neederslist.html" class="nav-link">Needers List</a>
+                <a href="./requests.html" class="nav-link">Requests</a>
+                <a href="./donationsitems.html" class="nav-link">Donation Items</a>
+                <a href="./archives.html" class="nav-link">Archives</a>
+                <a href="./statistics.html" class="nav-link">Statistics</a>
+                <a href="./profilesettings.js" class="nav-link">Profile Settings</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="categories-items">
+        <div class="header-container">
+            <header class="items-header">Available Items</header>
+            <button class="add-btn" id="add-item-btn">Add New Item</button>
+        </div>
+        <div class="body-container" id="items-container">
+            <!-- items will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="./items.js"></script>
+</body>
+
+</html>
