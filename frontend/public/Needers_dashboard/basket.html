@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Needer Dashboard</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="home.js" defer></script>
+</head>
+
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="header">
+        <h2>Welcome, <span id="member-name">User</span></h2>
+        <div class="profile-container">
+          <a href="#"><img id="member-image" src="default-image.jpg" alt="Profile Photo"></a>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a href="settings.html">Settings</a>
+            <a href="#" id="logoutBtn" class="logoutBtn">Log Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="home-settings">
+        <a href="home.html">Return to categories and items available</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="search-bar">
+        <div class="basket-item">
+        <a href="#">
+          <div class="basket"></div>
+        </a>
+        </div>
+        <a href="#">
+          <div class="notification" id="notificationBtn"><span id="notificationBadge" class="badge hidden">!</span>
+          </div>
+        </a>
+        <div id="notificationDropdown" class="dropdown hidden">
+          <ul id="notificationList"></ul>
+        </div>
+      </div>
+
+      <!-- Basket Container -->
+      <div class="basket-container">
+        <h1>Your Requested Items</h1>
+        <div id="basket-items" class="basket-items">
+          <!-- Items will be dynamically added here -->
+        </div>
+        <div id="total" class="total">
+          <p>Total Items: <span id="total-count">0</span></p>
+        </div>
+        <button id="request-btn">Submit Request</button>
+        <button id="clear-basket-btn">Clear Basket</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="basket.js"></script>
+</body>
+
+</html>
