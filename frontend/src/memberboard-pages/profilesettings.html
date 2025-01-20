@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Profile Settings</title>
+  <link rel="stylesheet" href="./profilesettings.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <nav id="navbar">
+      <header class="navbar-header">
+        <span class="member-name" id="navbar-member-name">Hi, User</span>
+        <div class="member-image">
+          <img id="member-image" src="default-image.jpg" alt="Profile Image">
+        </div>
+      </header>
+      <div class="nav-links">
+        <a href="./neederslist.html" class="nav-link">Needers List</a>
+        <a href="./requests.html" class="nav-link">Requests</a>
+        <a href="./donationsitems.html" class="nav-link">Donation Items</a>
+        <a href="./archives.html" class="nav-link">Archives</a>
+        <a href="./statistics.html" class="nav-link">Statistics</a>
+        <a href="./profilesettings.html" class="nav-link">Profile Settings</a>
+      </div>
+      <div class="logout-button">
+        <button type="button" id="logoutBtn" class="logoutBtn">Logout</button>
+      </div>
+    </nav>
+  </div>
+
+  <div class="settings">
+    <div class="photo-upload">
+      <a href="#"><img src="../../src/img/user.png" alt="Profile Photo" id="profilePhotoPreview"></a>
+      <input type="file" id="photoUpload" accept="image/*" style="display:none">
+    </div>
+
+    <div class="welcome">
+      <h1>Welcome!</h1>
+      <h3>Please try to update your personal information if needed to ensure contacting you successfully.</h3>
+      <div class="main-content">
+        <div class="search-bar">
+          <input type="text" placeholder="Full Name" id="fullNameInput">
+          <input type="text" placeholder="Phone" id="phoneInput">
+          <input type="text" placeholder="Email" id="emailInput">
+          <div class="contact-buttons">
+            <a href="#" class="contact-button" id="saveButton">Save Changes</a>
+            <a href="#" class="contact-button" id="cancelButton">Cancel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="profilesettings.js"></script>
+</body>
+
+</html>

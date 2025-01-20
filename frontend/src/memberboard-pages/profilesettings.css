@@ -1,0 +1,138 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+  color: #1e3f66;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 190px;
+  height: 100%;
+  background-color: #1e3f66;
+  padding: 20px 10px;
+  border-right: 3px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.member-name {
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.member-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid aliceblue;
+}
+
+.nav-links {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: #1e3f66;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #005555;
+  color: aliceblue;
+}
+
+.logoutBtn {
+  background-color: aliceblue;
+  color: #2E5984;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  position: fixed;
+  bottom: 100px;
+  left: 60px;
+  z-index: 1000;
+  height: 40px;
+  width: 70px;
+  font-size: 16px;
+}
+
+.photo-upload {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.photo-upload img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#photoUpload {
+  display: none; /* Hide the file input */
+}
+
+
+.settings{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 90px;
+}
+.settings.welcome{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.settings .welcome .main-content .search-bar{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+}
