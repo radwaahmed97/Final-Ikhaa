@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Needer Dashboard</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="../style.css">
+
+  <script src="home.js" defer></script>
+
+</head>
+
+  <div class="dashboard">
+  <div class="sidebar">
+    <div class="header">
+      <h2>Welcome, <span id="member-name">User</span></h2>
+
+      <div class="profile-container">
+        <a href="#"><img id="member-image" src="default-image.jpg" alt="Profile Photo" id="profilePhoto"></a>
+        <!-- Dropdown Menu -->
+        <div class="dropdown-menu" id="dropdownMenu">
+          <a href="settings.html">Settings</a>
+          <a href="#" id="logoutBtn" class="logoutBtn">Log Out</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-settings"><a href="home.html">Home</a> </div>
+
+
+
+    <h3>Discover categories below:</h3>
+    <ul id="categories-list"></ul>
+
+  </div>
+
+  <div class="main-content">
+    <div class="search-bar">
+
+      <div class="basket-item">
+      <a href="basket.html">
+        <div class="basket"></div>
+      </a>
+      </div>
+
+      <a href="#">
+        <div class="notification" id="notificationBtn">
+          <!-- Dropdown Menu for Notifications -->
+        <div id="notificationDropdown" class="dropdown hidden">
+          <ul id="notificationList"></ul>
+        </div>
+        <span id="notificationBadge" class="badge hidden">!</span>
+        </div>
+      </a>
+
+    </div>
+
+
+
+    <div class="items-container" id="items-container">
+      <h1>Welcome!</h1>
+      <p>Click on a category in the sidebar to view available items.</p>
+      <p>Don't Forget to always check your requests status from the Notifications Icon, Thanks!</p>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

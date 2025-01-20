@@ -1,0 +1,216 @@
+/* General layout adjustments for sidebar and main content */
+.sidebar {
+  width: 200px;
+  background: #f4f4f4;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.main-content {
+  margin-left: 260px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.expanded {
+  margin-left: 0;
+}
+
+/* Toggle button for sidebar */
+.toggle-sidebar {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.toggle-sidebar:hover {
+  background-color: #444;
+}
+
+
+/* Profile and dropdown menu */
+.profile-container {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+
+}
+
+#profilePhoto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/* Category and item list */
+ul#categories-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#categories-list li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ul#categories-list li:hover {
+  background-color: #ddd;
+}
+
+.items-container {
+  margin-top: 20px;
+}
+
+.item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.item:hover {
+  background-color: #f9f9f9;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #45a049;
+}
+
+/* Styles for the avatar and profile in the sidebar */
+.imgcontainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* General styling for the main content */
+.main-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Basic styles for the dropdown */
+#notificationDropdown {
+  display: none;
+  position: absolute;
+  right: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  width: 250px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#notificationList li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#notificationList li.unread{
+  background-color: #f0f0f0;
+}
+
+#notificationList li.read {
+  background-color: #e0e0e0;
+}
+
+#notificationList li:hover {
+  background-color: #d0d0d0;
+}
+
+#notificationDropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Notification Badge */
+#notificationBadge {
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  padding: 0 5px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.basket {
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  margin-top: 10px;
+}
+
+.logoutBtn {
+  position: fixed;
+  top: 90px;
+  right: 10px;
+  margin-top: 10px;
+}
+
+.notification {
+  
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  margin-top: 10px;
+}
