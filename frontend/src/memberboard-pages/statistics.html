@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="./statistics.css" />
+    <link rel="stylesheet" href="./profilesettings.css" />
+
+  </head>
+  <body>
+    <div class="navbar">
+    <nav id="navbar">
+      <header class="navbar-header">
+        <span class="member-name" id="navbar-member-name">Radwa Tawfik</span>
+        <div class="member-image">
+          <img id="member-image" src="default-image.jpg" alt="Profile Image">
+        </div>
+      </header>
+      <div class="nav-links">
+        <a href="./neederslist.html" class="nav-link">Needers List</a>
+        <a href="./requests.html" class="nav-link">Requests</a>
+        <a href="./donationsitems.html" class="nav-link">Donation Items</a>
+        <a href="./archives.html" class="nav-link">Archives</a>
+        <a href="./statistics.html" class="nav-link">Statistics</a>
+        <a href="./profilesettings.html" class="nav-link">Profile Settings</a>
+      </div>
+      <div class="logout-button">
+        <button type="button" id="logoutBtn" class="logoutBtn">Logout</button>
+      </div>
+    </nav>
+  </div>
+
+  <div class="settings">
+
+    <div class="statistics-container" id="statistics-container">
+      <h1>Platform Statistics</h1>
+    
+      <!-- Filter Options -->
+      <div class="statistics-filters">
+        <label for="time-filter">Filter by:</label>
+        <select id="time-filter">
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="yearly">Yearly</option>
+        </select>
+      </div>
+    
+      <!-- Statistics Results -->
+      <div id="statistics-results">
+        <h2>Statistics Summary</h2>
+        <p id="benefited-needers">Total Benefited Needers: <span>0</span></p>
+        <p id="total-requests">Total Requests Processed: <span>0</span></p>
+        <p id="accepted-requests">Accepted Requests: <span>0</span></p>
+        <p id="rejected-requests">Rejected Requests: <span>0</span></p>
+      </div>
+    </div>
+    
+    
+    
+  
+</div>
+
+    <script src="statistics.js"></script>
+  </body>
+</html>
+
