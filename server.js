@@ -5,6 +5,7 @@ const authRouter = require("./routes/auth");
 const authMiddlewareRouters = require("./routes/authMiddlewareRoute");
 const categoryRoutes = require("./routes/categoryRoutes");
 const itemRoutes = require("./routes/itemRoutes");
+const requestsRoutes = require("./routes/requestsRoutes");
 const path = require("path");
 const userRoutes = require("./routes/userRoutes");
 const memberRoutes = require("./routes/memberRoutes");
@@ -39,6 +40,9 @@ app.use("/categories", categoryRoutes);
 
 // memberboard items routes to do crud operations
 app.use("/items", itemRoutes);
+
+// requests routes to do crud operations
+app.use("/requests", requestsRoutes);
 
 // member handling needers list
 app.use("/needers", memberRoutes);
