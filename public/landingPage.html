@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKHAA - Welcome</title>
+  <link rel="stylesheet" href="/public/landingPage.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Welcome to <span class="highlight">IKHAA</span></h1>
+      <p>Join our mission of brotherhood, sharing resources, and helping those in need.</p>
+    </div>
+  </header>
+  <main>
+    <div class="hero-section">
+      <div class="hero-text">
+        <h2>Your contribution makes a difference!</h2>
+        <p>Sign up now to be a part of the change, or log in to continue your journey.</p>
+      </div>
+    </div>
+    <div class="buttons-container">
+      <button id="signup-btn" onclick="redirectToSignup()">Signup</button>
+      <button id="login-btn" onclick="redirectToLogin()">Login</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 IKHAA. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Redirect to the signup page
+    function redirectToSignup() {
+      window.location.href = "/public/authentication/signup.html";
+    }
+
+    // Redirect to the login page
+    function redirectToLogin() {
+      window.location.href = "/public/authentication/login.html";
+    }
+  </script>
+</body>
+
+</html>
