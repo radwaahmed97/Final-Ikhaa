@@ -11,6 +11,7 @@ const userRoutes = require("./routes/userRoutes");
 const memberRoutes = require("./routes/memberRoutes");
 const SettingsRoute = require("./routes/SettingsRoute");
 const statisticsRoutes = require("./routes/statisticsRoutes");
+const notificationsRoutes = require("./routes/notificationsRoutes");
 
 dotenv.config();
 connectDB();
@@ -52,6 +53,10 @@ app.use("/settings", SettingsRoute);
 
 // statistics from the provided Archive schema
 app.use("/statistics", statisticsRoutes);
+
+// notifications routes to fetch all notifications for the needer
+app.use("/notifications", notificationsRoutes);
+
 
 // Default route to test server status
 app.get("/", (request, response) => {
